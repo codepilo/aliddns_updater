@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "aliddns-updater"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Python script to update Aliyun DNS (Alidns) records with the current public IP address."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -24,8 +24,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/codepilo"
-Repository = "https://github.com/codepilo"
+Homepage = "https://github.com/codepilo/aliddns_updater"
+Repository = "https://github.com/codepilo/aliddns_updater"
 
 [project.scripts]
 aliddns-updater = "aliddns:main"
