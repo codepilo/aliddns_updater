@@ -68,6 +68,11 @@ def load_config():
                 print("\n⚠️  需要您的操作：")
                 print("   请打开上述文件，并填入您的 'access_key_id', 'access_secret' 以及 'domain'。")
                 print("   填写保存后，再次运行本程序即可生效！")
+                print("\n💡 进阶使用指南 & 定时任务配置：")
+                print("   您可以配置 crontab -e 来实现每 10 分钟自动更新：")
+                print("   */10 * * * * ~/.local/bin/aliddns-updater >> /tmp/aliddns-updater.log 2>&1")
+                print("\n⭐ 欢迎访问项目主页获取完整教程：")
+                print("   https://github.com/codepilo/aliddns_updater")
             else:
                 print("🚀 [AliDDNS] Initialization Wizard")
                 print("-" * 65)
@@ -76,6 +81,11 @@ def load_config():
                 print("\n⚠️  Action Required:")
                 print("   Please open this file and fill in your 'access_key_id', 'access_secret', and 'domain'.")
                 print("   Save the file and run this program again to continue!")
+                print("\n💡 Advanced Usage & Cron Job Setup:")
+                print("   You can configure crontab -e to automatically update every 10 minutes:")
+                print("   */10 * * * * ~/.local/bin/aliddns-updater >> /tmp/aliddns-updater.log 2>&1")
+                print("\n⭐ Visit the project homepage for full documentation:")
+                print("   https://github.com/codepilo/aliddns_updater")
             print("="*65 + "\n")
         except Exception as e:
             print(f"Error creating default config file {args.config}: {e}")
