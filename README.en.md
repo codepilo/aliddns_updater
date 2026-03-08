@@ -14,8 +14,21 @@ It is recommended to use `uv` or `pipx` to install this tool natively into an is
 
 Navigate to the project directory and invoke:
 ```bash
-uv tool install .
-# OR pipx install .
+# Using uv (Recommended)
+uv tool install aliddns-updater
+
+# Using pipx
+pipx install aliddns-updater
+```
+
+### Upgrading an Existing Installation
+To update to the latest version (e.g., `0.1.2` or newer), simply run:
+```bash
+# If installed via uv
+uv tool upgrade aliddns-updater
+
+# If installed via pipx
+pipx upgrade aliddns-updater
 ```
 This generates an executable `aliddns-updater` accessible from anywhere on your system.
 

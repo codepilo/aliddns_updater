@@ -13,8 +13,21 @@
 建议使用 `uv` 或者是 `pipx` 将其作为全局命令安装在系统中。在代码根目录下执行：
 
 ```bash
-uv tool install .
-# 或者使用 pipx install .
+# 使用 uv (推荐)
+uv tool install aliddns-updater
+
+# 使用 pipx
+pipx install aliddns-updater
+```
+
+### 更新到最新版本
+当工具发布了新版本（例如 `0.1.2`）时，已经安装的用户无需重新配置，只需执行升级命令即可无缝更新：
+```bash
+# 如果你是通过 uv 安装的
+uv tool upgrade aliddns-updater
+
+# 如果你是通过 pipx 安装的
+pipx upgrade aliddns-updater
 ```
 安装完成后，系统便拥有了 `aliddns-updater` 这一全局命令。
 
